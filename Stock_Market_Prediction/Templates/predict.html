@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Predictions</title>
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    
+    
+    <!-- Div for Plotly graph -->
+    <div id="plot"></div>
+
+    <!-- Script to render Plotly graph -->
+    <script>
+        // Embed Plotly graph in the div with id 'plot'
+        var graph = {{ graph_html|safe }};
+     
+    </script>
+</body>
+</html>

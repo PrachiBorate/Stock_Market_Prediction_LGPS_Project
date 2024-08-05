@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Market Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            background-color: #4f91a08f;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .output-box {
+            background-color: lightgrey;
+            width: 500px;  /* Increased width */
+            border: 15px solid rgb(147, 121, 121);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .output-box h1 {
+            color: #4a284a;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+        .form-row label {
+            font-size: 20px;  /* Increased font size for labels */
+            font-weight: bold; /* Added font weight */
+            flex: 1; /* Equal spacing for labels */
+            margin-right: 10px;
+            text-align: right;
+        }
+        .form-row input {
+            flex: 2; /* More space for input fields */
+            padding: 12px; /* Increased padding for input fields */
+            font-size: 18px;  /* Increased font size for input fields */
+            width: 100%;  /* Full width for input fields */
+            border-radius: 5px;
+            border: 1px solid #486185;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;  /* Adjusted padding for button */
+            font-size: 16px;  /* Decreased font size for button */
+            background-color: #441c44;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #781986;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="output-box" id="prediction-form">
+            <h1>Stock Market Prediction</h1>
+            <form id="predict-form" action="/predict" method="post">
+                <div class="form-row">
+                    <label for="start_date">Start Date:</label>
+                    <input type="date" id="start_date" name="start_date">
+                </div>
+                <div class="form-row">
+                    <label for="end_date">End Date:</label>
+                    <input type="date" id="end_date" name="end_date">
+                </div>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
