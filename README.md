@@ -104,7 +104,6 @@ def predict():
     graph_html = pio.to_html(fig, full_html=False)
     
     return render_template('predict.html', graph_html=graph_html)
-
 if __name__ == '__main__':
     app.run(debug=True)
 
