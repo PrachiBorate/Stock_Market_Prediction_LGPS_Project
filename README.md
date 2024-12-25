@@ -5,7 +5,7 @@ This project provides a web-based system to Stock Market Prediction using variou
 
 ## Features 
 - __Data Collection and Preprocessing__: Gather and clean historical stock market data, financial indicators, and news sentiment for analysis. 
-- __Feature Engineering: Create technical indicators, financial ratios, and sentiment scores from news data. 
+- Feature Engineering: Create technical indicators, financial ratios, and sentiment scores from news data. 
 - __Time Series Analysis__: Use ARIMA, SARIMA, or ETS models to forecast stock prices by analyzing trends, seasonality, and residuals. 
 - __Machine Learning Models__: Implement algorithms like Linear Regression, Random Forest, and LSTM for stock trend prediction. 
 - __Trading Signal Generation__: Develop algorithms to produce buy, hold, or sell signals based on predictions.
