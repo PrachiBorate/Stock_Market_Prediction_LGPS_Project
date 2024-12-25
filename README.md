@@ -1,4 +1,4 @@
-# Stock_Market_Prediction_LGPS_Project
+# Stock_Market_Prediction
 
 
 This project provides a web-based system to Stock Market Prediction using various Python libraries generate trading signals based on historical stock data ,market indicators and web interfacing.
